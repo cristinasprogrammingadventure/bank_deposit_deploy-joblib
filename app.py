@@ -2,6 +2,8 @@
 # selected_features = ['campaign_ranges', 'balance', 'age', 'education', 'housing', 'loan', 'poutcome_success', 'pdays']
 
 import streamlit as st
+import sklearn
+st.write(f"Scikit-learn version: {sklearn.__version__}")
 import joblib
 import numpy as np
 import pandas as pd
@@ -84,3 +86,6 @@ if st.button("Predecir"):
     except Exception as e:
         st.error(f"Error al realizar la predicción: {e}")
 
+import sklearn
+import streamlit as st
+st.write(f"Scikit-learn version: {sklearn.__version__}")
